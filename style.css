@@ -65,4 +65,22 @@ header {
     outline: none; 
     padding: 0; 
 }
+/* HERO SECTION */
+.hero {
+    background: url('images/hero-background.jpg') center center/cover no-repeat; /* Background image */
+    opacity: 0.5;
+    color: #f8f9fa; 
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.hero-content h1 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
 
