@@ -1,0 +1,68 @@
+/*-------- GLOBAL STYLES ---------*/
+* {
+    box-sizing: border-box;
+}
+  
+html {
+    font-size: 62.5%;
+}
+body {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #f8f9fa; 
+}
+/* HEADER */
+header {
+    background-color: #a9abb3; 
+    color: #f8f9fa; 
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem; 
+}
+
+.logo {
+    max-width: 10rem; 
+}
+
+.nav-items ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    flex-direction: column; 
+    background-color: #1b1f3b; 
+}
+
+.nav-items li {
+    margin: 1rem 0; 
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: #d4af37; 
+    font-weight: 500;
+    padding: 1rem 1.5rem; 
+    display: block;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s;
+}
+
+.nav-items a:hover {
+    background-color: #343a56; 
+}
+
+.toggle {
+    display: block;
+    cursor: pointer;
+    font-size: 2.4rem; 
+    color: #f8f9fa; 
+    background: none; 
+    border: none; 
+    outline: none; 
+    padding: 0; 
+}
+
