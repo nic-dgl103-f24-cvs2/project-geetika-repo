@@ -182,4 +182,59 @@ header {
     border-radius: 0.5rem;
     background: grey;
 }
+/* CALL-TO-ACTION SECTION */
+.call-to-action {
+    padding: 3rem 1rem;
+    text-align: center;
+    background-color: white;
+}
+
+.call-to-action h2 {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+}
+
+.call-to-action span {
+    display: inline-block;
+    font-size: 1.6rem;
+    color: #1b1f3b;
+    background-color: #d4af37; 
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+}
+
+/* FORM */
+.call-to-action form {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* This selector targets all the input, textarea, and button elements inside a form that is inside an element with the class call-to-action */
+.call-to-action form input, 
+.call-to-action form textarea,
+.call-to-action form button {
+    width: 100%;
+    max-width: 30rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border: 0.1rem solid #d4af37;
+    border-radius: 0.5rem;
+    font-size: 1.4rem;
+}
+/* input::placeholder and textarea::placeholder: these selectors target the placeholder text inside the input and textarea elements */
+.call-to-action form input::placeholder,
+.call-to-action form textarea::placeholder {
+    color: #666666;
+}
+
+.call-to-action form button {
+    background-color: #d4af37; 
+    color: #1b1f3b;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s;
+}
 
