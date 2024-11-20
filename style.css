@@ -237,4 +237,51 @@ header {
     font-weight: 500;
     transition: background-color 0.3s, color 0.3s;
 }
+/* FOOTER */
+footer {
+    background-color: #a9abb3; 
+    color: #ffffff;
+    padding: 2rem 1rem;
+    text-align: center;
+}
 
+footer .social-media {
+    margin-bottom: 2rem;
+}
+
+footer .social-media a {
+    display: inline-block;
+    margin: 0 1rem;
+    color: black; 
+    font-size: 1.6rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer .contact-info {
+    margin-bottom: 2rem;
+}
+
+footer .contact-info p {
+    margin: 0.5rem 0;
+    font-size: 1.4rem;
+}
+
+footer .map {
+    margin-bottom: 2rem;
+}
+
+footer .map h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: black;
+}
+
+footer .map p {
+    font-size: 1.4rem;
+}
+
+footer .copywrite {
+    font-size: 1.2rem;
+    color: #888888; 
+}
