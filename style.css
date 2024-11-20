@@ -2,31 +2,33 @@
 * {
     box-sizing: border-box;
 }
-  
+
 html {
     font-size: 62.5%;
 }
+
 body {
     margin: 0;
     font-family: 'Ubuntu', sans-serif;
     background-color: #f8f9fa;
     text-align: center;
 }
+
 /* HEADER */
 header {
-    background-color: #a9abb3; 
-    color: #f8f9fa; 
+    background-color: #a9abb3;
+    color: #f8f9fa;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem; 
+    padding: 1rem 2rem;
 }
 
 .logo {
-    max-width: 10rem; 
+    max-width: 10rem;
 }
 
 .nav-items ul {
@@ -34,42 +36,44 @@ header {
     padding: 0;
     margin: 0;
     display: none;
-    flex-direction: column; 
+    flex-direction: column;
 }
 
 .nav-items li {
-    margin: 1rem 0; 
+    margin: 1rem 0;
 }
 
 .nav-items a {
     text-decoration: none;
-    color: black; 
+    color: black;
     font-weight: 500;
-    padding: 1rem 1.5rem; 
+    padding: 1rem 1.5rem;
     display: block;
     border-radius: 0.5rem;
     transition: background-color 0.3s;
 }
 
 .nav-items a:hover {
-    background-color: #343a56; 
+    background-color: #343a56;
 }
 
 .toggle {
     display: block;
     cursor: pointer;
-    font-size: 2.4rem; 
-    color: #f8f9fa; 
-    background: none; 
-    border: none; 
-    outline: none; 
-    padding: 0; 
+    font-size: 2.4rem;
+    color: #f8f9fa;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 0;
 }
+
 /* HERO SECTION */
 .hero {
-    background: url('images/hero-background.jpg') center center/cover no-repeat; /* Background image */
+    background: url('images/hero-background.jpg') center center/cover no-repeat;
+    /* Background image */
     opacity: 0.5;
-    color: #f8f9fa; 
+    color: #f8f9fa;
     padding: 2rem 1rem;
 }
 
@@ -86,23 +90,23 @@ header {
 /* SERVICES SECTION */
 .services {
     padding: 2rem 1rem;
-    background-color: #f8f9fa; 
+    background-color: #f8f9fa;
 }
 
 .services h2 {
     font-size: 2.4rem;
     margin-bottom: 2rem;
-    color: #1b1f3b; 
+    color: #1b1f3b;
 }
 
 .services-content {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     gap: 2rem;
 }
 
 .service-card {
-    background-color: #ffffff; 
+    background-color: #ffffff;
     border-radius: 1rem;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 2rem;
@@ -111,33 +115,33 @@ header {
 
 .service-card h3 {
     font-size: 2rem;
-    color: #1b1f3b; 
+    color: #1b1f3b;
     margin-bottom: 1rem;
 }
 
 .service-card p {
     font-size: 1.6rem;
     line-height: 1.5;
-    color: #333; 
+    color: #333;
     margin-bottom: 1.5rem;
 }
 
 .service-card ul {
     list-style-type: circle;
     margin: 1rem 0 2rem 2rem;
-    color: #555; 
+    color: #555;
 }
 
 .service-card a {
     text-decoration: none;
     font-size: 1.6rem;
-    color: #d4af37; 
+    color: #d4af37;
     font-weight: 500;
     transition: color 0.3s;
 }
 
 .service-card a:hover {
-    color: #b8922f; 
+    color: #b8922f;
 }
 
 /* ABOUT SECTION */
@@ -148,7 +152,7 @@ header {
 
 .about h2 {
     font-size: 2.4rem;
-    color: #1b1f3b; 
+    color: #1b1f3b;
     margin-bottom: 1.5rem;
 }
 
@@ -166,7 +170,7 @@ header {
 .about p {
     font-size: 1.6rem;
     line-height: 1.5;
-    color: #333; 
+    color: #333;
     margin-bottom: 2rem;
 }
 
@@ -174,13 +178,14 @@ header {
     display: inline-block;
     text-decoration: none;
     font-size: 1.6rem;
-    color: #d4af37; 
+    color: #d4af37;
     font-weight: 500;
-    border: 0.2rem solid #d4af37; 
+    border: 0.2rem solid #d4af37;
     padding: 1rem 2rem;
     border-radius: 0.5rem;
     background: grey;
 }
+
 /* CALL-TO-ACTION SECTION */
 .call-to-action {
     padding: 3rem 1rem;
@@ -197,7 +202,7 @@ header {
     display: inline-block;
     font-size: 1.6rem;
     color: #1b1f3b;
-    background-color: #d4af37; 
+    background-color: #d4af37;
     padding: 1rem 2rem;
     border-radius: 0.5rem;
     margin-top: 2rem;
@@ -210,8 +215,9 @@ header {
     flex-direction: column;
     align-items: center;
 }
+
 /* This selector targets all the input, textarea, and button elements inside a form that is inside an element with the class call-to-action */
-.call-to-action form input, 
+.call-to-action form input,
 .call-to-action form textarea,
 .call-to-action form button {
     width: 100%;
@@ -222,6 +228,7 @@ header {
     border-radius: 0.5rem;
     font-size: 1.4rem;
 }
+
 /* input::placeholder and textarea::placeholder: these selectors target the placeholder text inside the input and textarea elements */
 .call-to-action form input::placeholder,
 .call-to-action form textarea::placeholder {
@@ -229,16 +236,17 @@ header {
 }
 
 .call-to-action form button {
-    background-color: #d4af37; 
+    background-color: #d4af37;
     color: #1b1f3b;
     border: none;
     cursor: pointer;
     font-weight: 500;
     transition: background-color 0.3s, color 0.3s;
 }
+
 /* FOOTER */
 footer {
-    background-color: #a9abb3; 
+    background-color: #a9abb3;
     color: #ffffff;
     padding: 2rem 1rem;
     text-align: center;
@@ -251,7 +259,7 @@ footer .social-media {
 footer .social-media a {
     display: inline-block;
     margin: 0 1rem;
-    color: black; 
+    color: black;
     font-size: 1.6rem;
     text-decoration: none;
     transition: color 0.3s;
@@ -282,12 +290,13 @@ footer .map p {
 
 .foot-end {
     font-size: 1.2rem;
-    color: black; 
+    color: black;
     border-top: 2px solid #555;
 }
 
 /* MEDIA QUERY FOR LARGE DEVICES */
 @media (min-width: 1200px) {
+
     /* HEADER */
     .nav-items {
         display: flex;
