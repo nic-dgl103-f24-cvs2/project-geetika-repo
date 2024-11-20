@@ -35,7 +35,6 @@ header {
     margin: 0;
     display: none;
     flex-direction: column; 
-    background-color: #1b1f3b; 
 }
 
 .nav-items li {
@@ -44,7 +43,7 @@ header {
 
 .nav-items a {
     text-decoration: none;
-    color: #d4af37; 
+    color: black; 
     font-weight: 500;
     padding: 1rem 1.5rem; 
     display: block;
@@ -281,7 +280,100 @@ footer .map p {
     font-size: 1.4rem;
 }
 
-footer .copywrite {
+.foot-end {
     font-size: 1.2rem;
-    color: #888888; 
+    color: black; 
+    border-top: 2px solid #555;
+}
+
+/* MEDIA QUERY FOR LARGE DEVICES */
+@media (min-width: 1200px) {
+    /* HEADER */
+    .nav-items {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .nav-items ul {
+        display: flex;
+        list-style: none;
+        margin: 15px;
+        text-align: center;
+        flex-direction: row;
+        font-size: 2rem;
+    }
+
+    .toggle {
+        display: none;
+    }
+
+    /* HERO SECTION */
+    .hero {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 4rem;
+    }
+
+    .hero .hero-content {
+        max-width: 50%;
+    }
+
+    .hero h1 {
+        font-size: 4rem;
+    }
+
+    .hero p {
+        font-size: 1.8rem;
+    }
+
+    /* SERVICES SECTION */
+    .services-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .services .service-card {
+        margin: 1rem;
+        padding: 2.5rem;
+    }
+
+    .services h2 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    /* FOOTER */
+    footer {
+        display: flex;
+        padding: 4rem 3rem;
+        flex-wrap: wrap;
+    }
+
+    footer .social-media {
+        flex: 1 1 30%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .contact-info {
+        flex: 1 1 30%;
+    }
+
+    footer .map {
+        flex: 1 1 30%;
+        text-align: center;
+    }
+
+    footer p {
+        font-size: 1.4rem;
+    }
+
+    .foot-end {
+        text-align: center;
+        flex-basis: 100%;
+        margin-top: 2rem;
+    }
 }
