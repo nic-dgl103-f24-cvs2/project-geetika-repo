@@ -68,6 +68,12 @@ header {
     padding: 0;
 }
 
+.show-items {
+    display: flex !important;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
 /* HERO SECTION */
 .hero {
     background: url('images/hero-background.jpg') center center/cover no-repeat;
