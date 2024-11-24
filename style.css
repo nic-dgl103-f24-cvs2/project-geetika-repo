@@ -23,62 +23,51 @@ header {
 .navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 1rem 2rem;
 }
 
 .logo {
     max-width: 10rem;
+    margin: auto 0;
 }
 
-.nav-items ul {
+nav {
+    display: block;
+}
+
+#nav-items {
+    display: none;
+}
+
+.show-items {
+    display: block !important;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#nav-items ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: none;
-    flex-direction: column;
 }
 
-.nav-items li {
-    margin: 1rem 0;
-}
-
-.nav-items a {
+#nav-items a {
     text-decoration: none;
     color: black;
     font-weight: 500;
     padding: 1rem 1.5rem;
     display: block;
-    border-radius: 0.5rem;
-    transition: background-color 0.3s;
-}
-
-.nav-items a:hover {
-    background-color: black;
-    color: white;
 }
 
 .toggle {
-    display: block;
     cursor: pointer;
     font-size: 2.4rem;
     color: #f8f9fa;
-    background: none;
-    border: none;
-    outline: none;
-    padding: 0;
+    margin: auto 0 auto auto;
 }
-
-.show-items {
-    display: flex !important;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
 /* HERO SECTION */
 .hero {
     background: url('images/hero-background.jpg') center center/cover no-repeat;
-    /* Background image */
     opacity: 0.5;
     color: #f8f9fa;
     padding: 2rem 1rem;
@@ -343,17 +332,64 @@ blockquote p {
     color: #2c3e50;
 }
 
+/*TEAM SECTION*/
+.team {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+.team h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+}
+
+.team-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+}
+
+.team-table th, .team-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.team-table th {
+    font-size: 1.8rem;
+    color: white;
+    background-color: black;
+}
+
+.team-table td {
+    font-size: 1.6rem;
+    color: #555;
+}
+
+.image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
 /* MEDIA QUERY FOR LARGE DEVICES */
 @media (min-width: 1200px) {
 
-    /* HEADER */
-    .nav-items {
+    nav {
         display: flex;
-        width: 100%;
-        justify-content: space-between;
     }
 
-    .nav-items ul {
+    /* HEADER */
+    #nav-items {
+        margin-left: auto;
+        display: flex !important;
+    }
+
+    #nav-items ul {
         display: flex;
         list-style: none;
         margin: 15px;
@@ -445,5 +481,22 @@ blockquote p {
     blockquote {
         max-width: 400px;
         margin: 0 1rem;
+    }
+
+    /* TEAM SECTION */
+    .team-table th, .team-table td {
+        font-size: 1.4rem;
+        padding: 0.8rem;
+    }
+
+    .image {
+        width: 120px;
+        height: 120px;
+    }
+
+    .team-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
     }
 }
