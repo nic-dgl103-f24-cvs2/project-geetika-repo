@@ -18,16 +18,16 @@
         <nav>
             <div class="navbar">
                 <img src="images/logo.png" width="100" height="40" alt="Logo" class="logo">
-                <div class="nav-items">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="about.html">About</a></li>
-                    </ul>
-                </div>
                 <a class="toggle" onclick="showNav()">
                     <i class="fa fa-bars"></i>
                 </a>
+            </div>
+            <div id="nav-items">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
             </div>
         </nav>
     </header>
@@ -129,5 +129,11 @@
             </p>
         </div>
     </footer>
+    <script>
+        function showNav() {
+            var element = document.getElementById("nav-items");
+            element.classList.toggle("show-items");
+        }
+    </script>
 </body>
 </html>
