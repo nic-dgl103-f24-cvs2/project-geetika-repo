@@ -5,21 +5,21 @@
 
 html {
     font-size: 62.5%;
+    background-color: #a9abb3;
 }
 
 body {
     margin: 0;
     font-family: 'Ubuntu', sans-serif;
-    background-color: #f8f9fa;
     text-align: center;
+    color: #1b1f3b;
+}
+
+section {
+    padding: 20%;
 }
 
 /* HEADER */
-header {
-    background-color: #a9abb3;
-    color: #f8f9fa;
-}
-
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -27,7 +27,6 @@ header {
 }
 
 .logo {
-    max-width: 10rem;
     margin: auto 0;
 }
 
@@ -57,20 +56,23 @@ nav {
     font-weight: 500;
     padding: 1rem 1.5rem;
     display: block;
+    font-size: x-large;
 }
 
 .toggle {
     cursor: pointer;
     font-size: 2.4rem;
-    color: #f8f9fa;
     margin: auto 0 auto auto;
 }
 /* HERO SECTION */
 .hero {
     background: url('images/hero-background.jpg') center center/cover no-repeat;
-    opacity: 0.5;
     color: #f8f9fa;
     padding: 2rem 1rem;
+}
+
+.hero-content {
+    padding: 24px;
 }
 
 .hero-content h1 {
@@ -125,7 +127,7 @@ nav {
 .service-card ul {
     list-style-type: circle;
     margin: 1rem 0 2rem 2rem;
-    color: #555;
+    color: #5a5959;
 }
 
 .service-card a {
@@ -152,7 +154,15 @@ nav {
     margin-bottom: 1.5rem;
 }
 
-.about img {
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+}
+
+.about img, .call-to-action-left img {
     width: 100%;
     max-width: 25rem;
     margin-bottom: 2rem;
@@ -166,7 +176,7 @@ nav {
 .about p {
     font-size: 1.6rem;
     line-height: 1.5;
-    color: #333;
+    color: #3e3d3d;
     margin-bottom: 2rem;
 }
 
@@ -189,18 +199,15 @@ nav {
     background-color: white;
 }
 
-.call-to-action h2 {
-    font-size: 2.4rem;
-    margin-bottom: 2rem;
+.call-to-action-right {
+    width: 50%;
+    margin-bottom: 5%;
 }
 
 .call-to-action span {
     display: inline-block;
-    font-size: 1.6rem;
+    font-size: xx-large;
     color: #1b1f3b;
-    background-color: #d4af37;
-    padding: 1rem 2rem;
-    border-radius: 0.5rem;
     margin-top: 2rem;
 }
 
@@ -216,19 +223,18 @@ nav {
 .call-to-action form input,
 .call-to-action form textarea,
 .call-to-action form button {
-    width: 100%;
-    max-width: 30rem;
+    width: 80%;
     margin-bottom: 1.5rem;
     padding: 1rem;
-    border: 0.1rem solid #d4af37;
-    border-radius: 0.5rem;
-    font-size: 1.4rem;
+    border: 0;
+    font-size: 2rem;
+    border-bottom: 0.2rem solid #d4af37;
 }
 
 /* input::placeholder and textarea::placeholder: these selectors target the placeholder text inside the input and textarea elements */
 .call-to-action form input::placeholder,
 .call-to-action form textarea::placeholder {
-    color: #666666;
+    color: #515151;
 }
 
 .call-to-action form button {
@@ -241,57 +247,38 @@ nav {
 }
 
 /* FOOTER */
-footer {
-    background-color: #a9abb3;
-    color: #ffffff;
-    padding: 2rem 1rem;
-    text-align: center;
+.footer-top {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 3%;
 }
 
-footer .social-media {
-    margin-bottom: 2rem;
+.social-media {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
-footer .social-media a {
-    display: inline-block;
-    margin: 0 1rem;
-    color: black;
-    font-size: 1.6rem;
+.social-media a {
+    color: #2c3e50;
+    margin: auto;
+    font-size: x-large;
     text-decoration: none;
-    transition: color 0.3s;
 }
 
-footer .contact-info {
-    margin-bottom: 2rem;
+.contact-info {
+    margin: auto 0;
+    font-size: x-large;
 }
 
-footer .contact-info p {
-    margin: 0.5rem 0;
-    font-size: 1.4rem;
-}
-
-footer .map {
-    margin-bottom: 2rem;
-}
-
-footer .map h3 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-    color: black;
-}
-
-footer .map p {
-    font-size: 1.4rem;
-}
-
-.foot-end {
-    font-size: 1.2rem;
-    color: black;
-    border-top: 2px solid #555;
+.map {
+    width: 100%;
 }
 
 /* services.html page Styling*/
-
 /* CLIENT TESTIMONIALS */
 .testimonials {
     background-color: white;
@@ -332,6 +319,7 @@ blockquote p {
     color: #2c3e50;
 }
 
+/* about.html page Styling*/
 /*TEAM SECTION*/
 .team {
     padding: 4rem 2rem;
@@ -396,6 +384,11 @@ blockquote p {
         text-align: center;
         flex-direction: row;
         font-size: 2rem;
+        margin: 12px 24px 12px 12px;
+    }
+
+    #nav-items li {
+        margin: inherit;
     }
 
     .toggle {
@@ -408,6 +401,7 @@ blockquote p {
         align-items: center;
         justify-content: space-between;
         padding: 4rem;
+        height: 100vh;
     }
 
     .hero .hero-content {
@@ -416,10 +410,12 @@ blockquote p {
 
     .hero h1 {
         font-size: 4rem;
+        margin: auto;
     }
 
     .hero p {
         font-size: 1.8rem;
+        margin: 5% auto;
     }
 
     /* SERVICES SECTION */
@@ -427,11 +423,13 @@ blockquote p {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
 
     .services .service-card {
         margin: 1rem;
         padding: 2.5rem;
+        height: 200px;
     }
 
     .services h2 {
@@ -439,36 +437,18 @@ blockquote p {
         text-align: center;
     }
 
+    .right-content {
+        width: 30%;
+    }
+
     /* FOOTER */
-    footer {
-        display: flex;
-        padding: 4rem 3rem;
-        flex-wrap: wrap;
+    
+    .social-media {
+        width: 33%;
     }
 
-    footer .social-media {
-        flex: 1 1 30%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    footer .contact-info {
-        flex: 1 1 30%;
-    }
-
-    footer .map {
-        flex: 1 1 30%;
-        text-align: center;
-    }
-
-    footer p {
-        font-size: 1.4rem;
-    }
-
-    .foot-end {
-        text-align: center;
-        flex-basis: 100%;
-        margin-top: 2rem;
+    .map {
+        width: 33%;
     }
 
     /* TESTIMONIALS */
