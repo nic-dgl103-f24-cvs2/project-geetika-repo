@@ -189,7 +189,7 @@ nav {
 }
 
 .call-to-action-right {
-    width: 50%;
+    width: 70%;
     margin-bottom: 5%;
 }
 
@@ -215,9 +215,9 @@ nav {
     width: 80%;
     margin-bottom: 1.5rem;
     padding: 1rem;
-    border: 0;
+    border-radius: 1rem;
     font-size: 2rem;
-    border-bottom: 0.2rem solid #d4af37;
+    border: 0.2rem solid #d4af37;
 }
 
 /* input::placeholder and textarea::placeholder: these selectors target the placeholder text inside the input and textarea elements */
@@ -399,18 +399,22 @@ blockquote p {
     .services-content {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
         flex-wrap: wrap;
     }
 
     .services .service-card {
         margin: 1rem;
         padding: 4rem;
-        height: 200px;
+        height: 250px;
     }
 
     .right-content {
         width: 30%;
+    }
+
+    .call-to-action-right {
+        width: 50%;
     }
 
     /* FOOTER */
