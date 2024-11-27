@@ -75,6 +75,7 @@ nav {
     background: url('images/hero-background.jpg') center center/cover no-repeat;
     color: #f8f9fa;
     padding: 2rem 1rem;
+    opacity: 0.8;
 }
 
 .hero-content {
@@ -189,7 +190,7 @@ nav {
 }
 
 .call-to-action-right {
-    width: 70%;
+    width: 100%;
     margin-bottom: 5%;
 }
 
@@ -198,6 +199,10 @@ nav {
     font-size: xx-large;
     color: #1b1f3b;
     margin-top: 2rem;
+}
+
+video {
+    display: none;
 }
 
 /* FORM */
@@ -378,7 +383,7 @@ blockquote p {
         align-items: center;
         justify-content: space-between;
         padding: 4rem;
-        height: 100vh;
+        height: 90vh;
     }
 
     .hero .hero-content {
@@ -415,6 +420,13 @@ blockquote p {
 
     .call-to-action-right {
         width: 50%;
+    }
+
+    .video {
+        display: flex;
+        max-width: 650px;
+        border-radius: 2rem;
+        margin-right: 5rem;
     }
 
     /* FOOTER */
