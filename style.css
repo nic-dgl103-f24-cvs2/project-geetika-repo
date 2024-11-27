@@ -75,7 +75,6 @@ nav {
     background: url('images/hero-background.jpg') center center/cover no-repeat;
     color: #f8f9fa;
     padding: 2rem 1rem;
-    opacity: 0.8;
 }
 
 .hero-content {
@@ -134,7 +133,7 @@ nav {
 .service-card a {
     text-decoration: none;
     font-size: 1.6rem;
-    color: #d4af37;
+    color: #3c3006;
     font-weight: 500;
     transition: color 0.3s;
 }
@@ -174,12 +173,12 @@ nav {
     display: inline-block;
     text-decoration: none;
     font-size: 1.6rem;
-    color: #d4af37;
+    color: #3c3006;
     font-weight: 500;
-    border: 0.2rem solid #d4af37;
+    border: 0.2rem solid #3c3006;
     padding: 1rem 2rem;
     border-radius: 0.5rem;
-    background: grey;
+    background: white;
 }
 
 /* CALL-TO-ACTION SECTION */
