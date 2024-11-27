@@ -71,6 +71,7 @@ nav {
     font-size: 2.4rem;
     margin: auto 0 auto auto;
 }
+
 /* HERO SECTION */
 .hero {
     background: url('images/hero-background.jpg') center center/cover no-repeat;
@@ -153,7 +154,8 @@ nav {
     justify-content: space-evenly;
 }
 
-.about img, .call-to-action-left img {
+.about img,
+.call-to-action-left img {
     width: 100%;
     max-width: 60rem;
     margin-bottom: 2rem;
@@ -321,7 +323,8 @@ blockquote p {
     margin-top: 2rem;
 }
 
-.team-table th, .team-table td {
+.team-table th,
+.team-table td {
     padding: 1rem;
     text-align: left;
     border-bottom: 1px solid #ddd;
@@ -452,7 +455,8 @@ blockquote p {
     }
 
     /* TEAM SECTION */
-    .team-table th, .team-table td {
+    .team-table th,
+    .team-table td {
         font-size: 1.4rem;
         padding: 0.8rem;
     }
