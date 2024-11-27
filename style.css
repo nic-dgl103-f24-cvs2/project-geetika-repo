@@ -4,7 +4,7 @@
 }
 
 html {
-    font-size: 70%;
+    font-size: 62.5%;
     background-color: #a9abb3;
 }
 
@@ -12,6 +12,7 @@ body {
     margin: 0;
     font-family: 'Ubuntu', sans-serif;
     text-align: center;
+    font-size: 1.6rem;
 }
 
 h2 {
