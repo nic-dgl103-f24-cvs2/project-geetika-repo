@@ -233,6 +233,9 @@ video {
     font-weight: 500;
     transition: background-color 0.3s, color 0.3s;
 }
+.call-to-action-right label {
+    display: none;
+}
 
 /* FOOTER */
 .footer-top {
