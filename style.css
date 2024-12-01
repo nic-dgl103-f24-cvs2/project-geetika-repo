@@ -76,6 +76,7 @@ nav {
 .hero {
     background: url('images/hero-background.jpg') center center/cover no-repeat;
     color: white;
+    background-color: #4A4C54;
     padding: 2rem 1rem;
 }
 
