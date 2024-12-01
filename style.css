@@ -75,7 +75,7 @@ nav {
 /* HERO SECTION */
 .hero {
     background: url('images/hero-background.jpg') center center/cover no-repeat;
-    color: #f8f9fa;
+    color: white;
     padding: 2rem 1rem;
 }
 
@@ -232,9 +232,6 @@ video {
     cursor: pointer;
     font-weight: 500;
     transition: background-color 0.3s, color 0.3s;
-}
-.call-to-action-right label {
-    display: none;
 }
 
 /* FOOTER */
