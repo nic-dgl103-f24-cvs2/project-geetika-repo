@@ -353,11 +353,6 @@ td {
     margin-right: 1rem;
 }
 
-iframe {
-    width: auto;
-    height: auto;
-}
-
 /* MEDIA QUERY FOR LARGE DEVICES */
 @media (min-width: 1200px) {
 
